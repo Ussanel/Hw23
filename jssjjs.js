@@ -1,16 +1,16 @@
 // Завдання 1 :)
 // 1.1
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// let it = arr.length-1
-// function pronto(arr, index = 0, sum=0) {
-//     sum = sum + arr[index]
-//     console.log (sum)
-//     if(index <it){
-//     pronto(arr,++index,sum)}
-//     else if(index> it){
-// return console.log('done')}
-// }
-// pronto(arr)
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let it = arr.length-1
+function pronto(arr, index = 0, sum=0) {
+    sum = sum + arr[index]
+    console.log (sum)
+    if(index <it){
+    pronto(arr,++index,sum)}
+    else if(index> it){
+return console.log('done')}
+}
+pronto(arr)
 // 1.2
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // let it = arr.length-1
