@@ -1,16 +1,16 @@
 // Завдання 1 :)
 // 1.1
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let it = arr.length-1
-function pronto(arr, index = 0, sum=0) {
-    sum = sum + arr[index]
-    console.log (sum)
-    if(index <it){
-    pronto(arr,++index,sum)}
-    else if(index> it){
-return console.log('done')}
-}
-pronto(arr)
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let it = arr.length-1
+// function pronto(arr, index = 0, sum=0) {
+//     sum = sum + arr[index]
+//     console.log (sum)
+//     if(index <it){
+//     pronto(arr,++index,sum)}
+//     else if(index> it){
+// return console.log('done')}
+// }
+// pronto(arr)
 // 1.2
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // let it = arr.length-1
@@ -20,7 +20,7 @@ pronto(arr)
 //     return index<it ? pronto(arr,++index,sum):console.log('done')}
 //     pronto(arr)
 
-// // // Завдання 2  :((
+// // // Завдання 2  :(( не заходить в дочірній об'єкт в теренарному
 
 // function deepCount(arg) {
 //     let it = arg.length
@@ -28,18 +28,32 @@ pronto(arr)
 //         if (Array.isArray(arg[key])) {
 //                 it += deepCount(arg[key])
 //             }
-           
 //         }
 //         return it;
 //  }
-// let user= [1,2,3]
+// або теренарний
+// function deepCountTER(arg) {
+//     let count = arg.length
+//     for (const key in arg) {
+//         count += Array.isArray(arg[key]) ? deepCountTER(arg[key]) : 0;
+//       }
+//       return count;
+  
+//  }
+
+
+// let user= [1,2,[3,4,[5]]]
 // console.log(deepCount(user))
+
 // const fake = [1,2,[3]]
 // console.log (deepCount(fake))
 
-//     console.log(deepCount([]))
+// console.log (deepCountTER(user))
+// console.log (deepCountTER(fake))
+
+    // console.log(deepCount([]))
 //     // 0
-//     console.log(deepCount[1, 2, 3]);
+    // console.log(deepCount[1, 2, 3]);
 //     // 3
 //      console.log(deepCount([x, y, [z]]));
 //     // 4
